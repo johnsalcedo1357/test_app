@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ffe57af4837352102d3fbed6feaad34e" label="Innovate" max_length="40" name="x_1620159_innovate_innovate" type="collection">
+        <element label="Assigned to" max_length="40" name="assigned_to" reference="sys_user" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="cost_savings" label="Idea type" mandatory="true" max_length="40" name="idea_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Process Improvement" value="process_improvement"/>
+                <element inactive_on_update="false" label="Cost Savings" value="cost_savings"/>
+                <element inactive_on_update="false" label="Team Building" value="team_building"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Short description" mandatory="true" max_length="125" name="short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element choice="3" default="Not started" label="Review Status" max_length="40" name="review_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Not started" value="Not started"/>
+                <element inactive_on_update="false" label="In progress" value="In progress"/>
+                <element inactive_on_update="false" label="Reviewed" value="Reviewed"/>
+            </choice>
+        </element>
+    </element>
+</database>
